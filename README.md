@@ -27,7 +27,7 @@ docker pull johnsyweb/glyptodont:latest
 And then execute:
 
 ```sh
-docker run -v${PWD}:/src -it johnsyweb/glyptodont-docker:latest -d /src
+docker run -v${PWD}:/src -it johnsyweb/glyptodont:latest -d /src
 ```
 
 ## Usage
