@@ -16,9 +16,7 @@ don, this image is for ***you***!
 This was written after I was bitten by a TODO not being _done_ at work. I expect
 to build it into our CI pipeline and see what it catches.
 
-## Getting started 
-
-Add this line to your application's Gemfile:
+## Getting started
 
 ```sh
 docker pull johnsyweb/glyptodont:latest
@@ -39,6 +37,24 @@ Mount your source directory at `/src`, as above. The following command-line opti
     -t, --threshold TODOS            Maximum number of TODOs to allow (default 10)
     -m, --max-age DAYS               Maximum number of days to allow TODOs to stay (default 14)
         --version                    Show version
+```
+
+### Buildkite
+
+Here is one way to run glyptodont as a step in your
+[Buildkite pipeline](https://buildkite.com/docs/pipelines).
+
+```yaml
+  - name: ":scroll: Glyptodont - Getting TODOs Done!"
+    agents: *docker-agents
+    plugins:
+      - docker#v3.8.0:
+          image: "johnsyweb/glyptodont:latest"
+          command: ["-d", "/src"]
+          mount-checkout: false
+          volumes:
+            - $PWD:/src
+          workdir: /tmp
 ```
 
 ## Configuration
