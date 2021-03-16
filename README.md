@@ -53,7 +53,7 @@ Here is one way to run glyptodont as a step in your
           command: ["-d", "/src"]
           mount-checkout: false
           volumes:
-            - $PWD:/src
+            - .:/src
           workdir: /tmp
 ```
 
