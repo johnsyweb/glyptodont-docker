@@ -9,7 +9,7 @@ All of the glyptodonts have fossilised. This is a tool to ensure that your TODOs
 are eradicated before this can happen to them.
 
 If you've ever been caught out because a TODO in production code has not been
-don, this image is for ***you***!
+done, this image is for ***you***!
 
 ## Development status
 
@@ -87,7 +87,7 @@ conduct](https://github.com/johnsyweb/glyptodont/blob/master/CODE_OF_CONDUCT.md)
 
 ## License [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/johnsyweb/glyptodont/blob/HEAD/LICENSE.txt)
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The image is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Code of Conduct
 
